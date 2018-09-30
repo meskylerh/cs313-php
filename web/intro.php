@@ -16,7 +16,7 @@
             <div class="flex">
                 <main>
                     <h2>Welcome</h2>
-					<?php include "nav.php"); ?>
+					<?php include ("nav.php"); ?>
 		</div>
                     <p>My name is Skyler Hildreth</p>
                     <img src="arch.jpg" alt="my wife and me" width="240" height="200">
