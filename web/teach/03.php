@@ -17,10 +17,19 @@
 	<strong>Email:</strong><br>
 	<input type="text" name="Email"><br><br>
 	<strong>Major:</strong><br>
-  <input type="radio" name="Major" value="Computer Science" checked> Computer Science<br>
-  <input type="radio" name="Major" value="Web Design and development"> Web Design and development<br>
-  <input type="radio" name="Major" value="Computer information and technology"> Computer information and technology<br> 
-   <input type="radio" name="Major" value="Computer engineering"> "Computer engineering<br>
+    <input type="radio" name="Major" value="Computer Science" checked> Computer Science<br>
+    <input type="radio" name="Major" value="Web Design and development"> Web Design and development<br>
+    <input type="radio" name="Major" value="Computer information and technology"> Computer information and technology<br> 
+    <input type="radio" name="Major" value="Computer engineering"> "Computer engineering<br>
+   <Strong>Continents Visited</strong>
+  <input type="checkbox" name="continent[]" value="North America">North America<br>
+  <input type="checkbox" name="continent[]" value="South America" checked="checked"> South America<br>
+  <input type="checkbox" name="continent[]" value="Europe" checked="checked"> Europe<br>
+  <input type="checkbox" name="continent[]" value="Asia" checked="checked"> Asia<br>
+  <input type="checkbox" name="continent[]" value="Australia" checked="checked"> Australia<br>
+  <input type="checkbox" name="continent[]" value="Africa" checked="checked"> Africa<br>
+  <input type="checkbox" name="continent[]" value="Antartica" checked="checked"> Antartica<br>
+   
    <strong>Comments:</strong><br>
    <textarea name="comments" rows="20" cols="50"></textarea>
    <input type="submit" value="submit">
