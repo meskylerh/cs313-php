@@ -10,7 +10,7 @@
     <body>
 	
         <div class="container">
-<form>
+<form action="display.php" method="post>
 	
 	<strong>Name:</strong><br>
 	<input type="text" name="Name"><br><br>
@@ -23,6 +23,7 @@
    <input type="radio" name="Major" value="Computer engineering"> "Computer engineering<br>
    <strong>Comments:</strong><br>
    <textarea name="comments" rows="20" cols="50"></textarea>
+   <input type="submit" value="submit">
    
 </form>
         </div>
