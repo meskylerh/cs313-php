@@ -7,10 +7,10 @@ echo "Major:" . "<br>" . $_POST["Major"] . "<br><br>";
 echo "Comments:" . "<br>"  . $_POST["comments"] . "<br><br>";
 
 echo "Continents Vistited:";
-if (isset{$_POST['continents'])){
+if (isset($_POST['continents'])){
 foreach($_POST['continents'] as $ContValues){
 echo $ContValues . "</br>";
-}
+}}
 ?>
 </body>
 </html>
