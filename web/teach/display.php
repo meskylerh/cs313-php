@@ -1,10 +1,12 @@
 <html>
 <body>
 <?php
-echo username .   $_POST["Name"] . "<br>";
-echo Email .   $_POST["Email"] . "<br>";
-echo Major .  $_POST["Major"] . "<br>";
-echo Comments .   $_POST["comments"] . "<br>";
+echo "username:" . "<br>" .   $_POST["Name"] . "<br>";
+echo "Email:" . "<br>" .   $_POST["Email"] . "<br>";
+echo "Major:" . "<br>"  $_POST["Major"] . "<br>";
+echo "Comments:" . "<br>"   $_POST["comments"] . "<br>";
+
+echo "Continents:"
 ?>
 </body>
 </html>
