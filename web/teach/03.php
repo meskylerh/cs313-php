@@ -10,7 +10,7 @@
     <body>
 	
         <div class="container">
-<form action="display.php" method="post>
+<form action="display.php" method="post">
 	
 	<strong>Name:</strong><br>
 	<input type="text" name="Name"><br><br>
