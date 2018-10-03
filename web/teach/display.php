@@ -1,9 +1,10 @@
 <html>
 <body>
-
-username <?php echo $GET["Name"]; ?><br>
-Email <?php echo $GET["Email"]; ?><br>
-Major <?php echo $GET["Major"]; ?><br>
-Comments <?php echo $GET["comments"]; ?><br>
+<?php
+echo username  echo $_POST["Name"]; <br>
+echo Email  echo $_POST["Email"]; <br>
+echo Major  echo $_POST["Major"]; <br>
+echo Comments  echo $_POST["comments"]; <br>
+?>
 </body>
 </html>
