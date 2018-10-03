@@ -6,7 +6,7 @@ echo "Email:" . "<br>" .   $_POST["Email"] . "<br><br>";
 echo "Major:" . "<br>" . $_POST["Major"] . "<br><br>";
 echo "Comments:" . "<br>"  . $_POST["comments"] . "<br><br>";
 
-echo "Continents Vistited:";
+echo "Continents Vistited:" . "<br>";
     if(isset($_POST['continent'])) {
       $continents = $_POST['continent'];  
 
