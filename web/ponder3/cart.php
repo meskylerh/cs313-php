@@ -25,9 +25,12 @@
 					<?php 
 				$silver = $_SESSION["cart"];
 				foreach($silver as $silvera){
-				echo $silvera."<br />";
+				echo "<strong>" .$silvera."</Strong>"."<br />";
 			}
 					?>
+			<form action="checkout.php" method="post">
+			<input type="submit" value="Checkout!">
+		</form>
 		</div>
 		      <footer>
             <p>created By Skyler Hildreth enjoy</p>

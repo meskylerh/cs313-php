@@ -46,7 +46,7 @@
    coin program from the United States Mint.<br><br>
    <label>Price</label><br>
    $19.47
-   <input type="checkbox" name="silver[]" value="eagle 1oz" ><label>ADD TO CART!!!<label><br><br>
+   <input type="checkbox" name="silver[]" value="Eagle 1oz" ><label>ADD TO CART!!!<label><br><br>
    
    <img src="s4.png" style="width:200px;height:200px;"><br>
    <strong><label> Silver norse gods Thor 2oz .999 silver</label></strong><br>
