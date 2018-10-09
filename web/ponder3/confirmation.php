@@ -9,7 +9,7 @@ echo $_POST["name"] . "<br><br>";
 echo "Your order will be sent to:" . "<br><br>";
 echo $_POST["street"] . " " . $_POST["city"] . "<br>" . $_POST["state"]. "  " . $_POST["zip"]. "<br><br>";
 
-echo "Your order:" . "<br><br>;
+echo "Your order:" . "<br><br>";
 
 				$silver = $_SESSION["cart"];
 				foreach($silver as $silvera){
