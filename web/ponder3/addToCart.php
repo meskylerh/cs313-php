@@ -8,4 +8,4 @@
 		array_push($_SESSION["cart"], $silvera);
 	}
 	header('Location: cart.php')
-<?
+?>
