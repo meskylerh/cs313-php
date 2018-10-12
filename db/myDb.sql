@@ -24,6 +24,14 @@ Create Table public.collection
    quantity INT NOT NULL
 );
 
+CREATE TABLE public.orders
+(
+	id INT NOT NULL PRIMARY KEY,
+	user_id INT references public.user(id),
+	metal_id INT references public.metal(id)
+);
+
+
 
 create type metalType as enum ('silver', 'gold', 'Platinum', 'copper');
 create type bullion as enum ('coin', 'bar', 'round');
