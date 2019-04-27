@@ -21,7 +21,7 @@
 <form action="addToCart.php" method="post">
 	
 	<img src="s1.jpg" style="width:200px;height:200px;"><br>
-	<strong><label> Silver Peregrine 1oz .9999 silver</label></strong><br>
+	<strong><label> Silver Peregrine .9999 silver</label></strong><br>
    <label> Description:</label><br>
    This is the first release in the Birds of Prey series from the Royal Canadian Mint.<br>
    The Birds of Prey series is the successor of the popular Canadian Wildlife Series<br><br>
