@@ -18,7 +18,6 @@
                 <main>
                     
 					<?php include("nav.php"); ?>
-               <h2>Welcome</h2>
 		</div>
                   <p>"Comming Soon"</p>  
                   
