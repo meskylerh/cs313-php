@@ -20,7 +20,7 @@
                     <h2>Welcome</h2>
                     <?php
                         date_default_timezone_set('America/Denver');
-                        echo date('l F j   Y h:i:s A');
+                        echo date('l F j   \a\t h:i:s A');
                         ?>
 		</div>
                     <p>My name is Skyler Hildreth</p>
