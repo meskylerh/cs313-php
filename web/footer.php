@@ -1,4 +1,5 @@
 		<div class="footer">
+      <br><br>
        <p>created By Skyler Hildreth enjoy</p>
 			<ul>
 				<li class="home"><a href="intro.php">Home</a></li>
