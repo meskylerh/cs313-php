@@ -21,10 +21,8 @@
                   <p>"Comming Soon"</p>  
                   
                 </main>
-            </div>
-        <footer>
-            <p>created By Skyler Hildreth enjoy</p>
-        </footer>
+           
+            <?php include ("footer.php"); ?>
         </div>
     </body>
 
