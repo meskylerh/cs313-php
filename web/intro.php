@@ -19,7 +19,7 @@
                 	<?php include ("nav.php"); ?>
                     <h2>Welcome</h2>
                     <?php
-                        echo "You are visiting on: " . date('l j F  h:i:s A');
+                        echo "You are visiting on: " . date('l F j   h:i:s A');
                         ?>
 		</div>
                     <p>My name is Skyler Hildreth</p>
