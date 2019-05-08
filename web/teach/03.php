@@ -21,7 +21,7 @@
     <input type="radio" name="Major" value="Web Design and development"> Web Design and development<br>
     <input type="radio" name="Major" value="Computer information and technology"> Computer information and technology<br> 
     <input type="radio" name="Major" value="Computer engineering"> "Computer engineering<br>
-   <Strong>Continents Visited</strong>
+   <Strong>Continents Visited</strong><br>
   <input type="checkbox" name="continent[]" value="North America" checked="checked">North America<br>
   <input type="checkbox" name="continent[]" value="South America"> South America<br>
   <input type="checkbox" name="continent[]" value="Europe"> Europe<br>
