@@ -6,9 +6,8 @@
 
 <?php
 echo "username:" . "<br>" .   $_POST["Name"] . "<br><br>";
-echo "Email:" . "<br>" . "<a href= 'mailto:'" .  $_POST["Email"] . "a></a><br><br>";
+echo "Email:" . "<br>" . "<a href= 'mailto:'" .  $_POST["Email"] . "></a><br><br>";
 echo "Major:" . "<br>" . $_POST["Major"] . "<br><br>";
-echo "Comments:" . "<br>"  . $_POST["comments"] . "<br><br>";
 
 echo "Continents Vistited:" . "<br>";
     if(isset($_POST['continent'])) {
@@ -17,6 +16,10 @@ echo "Continents Vistited:" . "<br>";
     foreach ($continents as $contValue){
    echo $contValue."<br />";
   }}
+  
+  echo "Comments:" . "<br>"  . $_POST["comments"];
+  
+  
 ?>
 </body>
 </html>
