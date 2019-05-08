@@ -11,10 +11,10 @@ echo "Major:" . "<br>" . $_POST["Major"] . "<br><br>";
 echo "Comments:" . "<br>"  . $_POST["comments"] . "<br><br>";
 
 echo "Continents Vistited:" . "<br>";
-    if(isset($_POST['continent'])) {
-      $continents = $_POST['continent'];  
-
-    foreach ($continents as $contValue){
+    if(isset($_POST['abrev'])) {
+      $continents = $_POST['abrev'];  
+      $continents = array("NA"=>"North America", "SA"=>"South America", "EU"=>"Europe", "AS" =>"Asia", "AU"=>"Australia", "AF"=>"Africa", "AN"=>"Antartica"); 
+   foreach ($continents[$_POST['abrev']] as $contValue){
    echo $contValue."<br />";
   }}
   
