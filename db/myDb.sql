@@ -5,37 +5,48 @@ CREATE TABLE public.user
 	password VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE public.metal
+CREATE TABLE public.band
 (
-	id INT NOT NULL PRIMARY KEY,
-	btype bullion NOT NULL,
+	band_id INT NOT NULL PRIMARY KEY,
 	name VARCHAR(100) NOT NULL,
-	description TEXT NOT NULL,
-	price DECIMAL NOT NULL,
-	type metalType NOT NULL
+	type genre  NOT NULL,
 );
 
-Create Table public.collection
+Create Table public.showtime
 (
-   id INT NOT NULL PRIMARY KEY,
-   collection_name VARCHAR(100) not null,
-   user_id INT references public.user(id),
-   metal_id INT references public.metal(id),
-   quantity INT NOT NULL
+   showtime_id INT NOT NULL PRIMARY KEY,
+   Date VARCHAR(100) not null,
+   time TIME Not null
 );
 
-CREATE TABLE public.orders
+CREATE TABLE public.food
 (
-	id INT NOT NULL PRIMARY KEY,
-	user_id INT references public.user(id),
-	metal_id INT references public.metal(id)
+	food_id INT NOT NULL PRIMARY KEY,
+	name Varchar(100) Not Null,
+	price DECIMAL Not Null
 );
+Create TABLE public.menu
+(	
+	menu_id INT NOT NULL PRIMARY KEY,
+	meal meal NOT NULL,
+	name VARCHAR(100) references public.food(name),
+	price DECIMAL references public.food(price)
+);
+	
+CREATE TABLE public.ticket
+(
+	ticket_id INT NOT NULL PRIMARY KEY,
+	date Varchar(100) references Public.showtime(Date),
+	time TIME references public.showtime(time),
+	name VARCHAR(100) references public.band(name)
+	price DECIMAL NOT NULL
+);
+	
+	
+
+
+Create type meal as enum ('breakfast', 'lunch', 'dinner');
+create type genre as enum ('country', 'metal', 'rock', 'disco', 'pop');
 
 
 
-create type metalType as enum ('silver', 'gold', 'Platinum', 'copper');
-create type bullion as enum ('coin', 'bar', 'round');
-
-
-alter table public.metal
-add column weight DECIMAL NOT NULL;
