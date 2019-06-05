@@ -39,7 +39,7 @@ session_start();
         $login = $_POST['login'];
         $password = $_POST['password'];
         $db = getDb();
-        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    $hashedPassword = fetch()['password]';
         $users = selectByLoginPassword($db, $login, $hashedPassword);//listAll($db); //
         $countUsers =count($users); 
         if($countUsers == 0) {

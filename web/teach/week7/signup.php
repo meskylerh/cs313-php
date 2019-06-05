@@ -42,7 +42,7 @@ session_start();
         echo '<h2>Welcome, '.$username.'</h2>';
     }
 
-    function insertUser($db, $login, $password) {
+    function insertUsertoDb($db, $login, $password) {
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
         insertUser($db, $login, $password);
     }
@@ -71,7 +71,7 @@ session_start();
         $countUsers =count($users); 
         if($countUsers == 0) {
                 //User not found
-                //Cheking password match 
+                //Checking password match 
                 if($password == $passwordCopy && checkValid($password)) {
                    $user_id = insertUser($db, $login, $password);
                    setSessionUser($user_id, $login);
