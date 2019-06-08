@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once 'db.php';
+require 'db.php';
 ?>
 <!DOCTYPE html>
 <html>
