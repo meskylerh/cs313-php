@@ -21,7 +21,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                $date $time
                </div>
             </div>
-            '
+            ';
 
 ?>
 
