@@ -19,7 +19,7 @@ function selectByLoginPassword($db, $login, $password) {
 	return $rows;
 }
 
-function insertUsertoDb($db, $login, $password) {
+function insertUser($db, $login, $password) {
 	$filteredLogin = filter_var($login, FILTER_SANITIZE_STRING, FILTER_NULL_ON_FAILURE);
 	$filteredPassword = filter_var($password, FILTER_SANITIZE_STRING, FILTER_NULL_ON_FAILURE);
 	if(null == $filteredLogin || null == $filteredPassword) {
