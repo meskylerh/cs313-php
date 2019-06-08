@@ -1,5 +1,5 @@
 <?php include 'header.php'; 
-$db = get_db();
+$db = getDb();
 $statement = $db->prepare("SELECT name, type, date, time FROM event WHERE accepted = TRUE");
 $statement->execute();
 
