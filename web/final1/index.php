@@ -7,7 +7,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
    $name = htmlentities($row['name']);
 	$type = $row['type'];
-	$date = date_format(date_create($row['date']), 'l jS F Y');
+	$date = date_format(date_create($row['date']), 'l F jS Y');
 	$time = date_format(date_create($row['time']), 'g:i A');
    
    echo "<div class='event'>
@@ -18,7 +18,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
               $type 
             </div>
             <div class='date'> 
-               $date $time
+               $date at $time
                </div>
             </div>
             ";
