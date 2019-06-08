@@ -10,18 +10,18 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	$date = $row['date'];
 	$time = $row['time'];
    
-   echo '<div class="event">
-            <div class="bandname">
+   echo "<div class='event'>
+            <div class='bandname'>
                $name 
             </div>
-            <div class="type"> 
+            <div class='type'> 
               $type 
             </div>
-            <div class="date"> 
+            <div class='date'> 
                $date $time
                </div>
             </div>
-            ';
+            ";
 }    
 include 'footer.php';
 ?> 
