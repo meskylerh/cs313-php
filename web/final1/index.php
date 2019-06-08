@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
-<?php
+<?php include 'header.php'; 
+
 $statement = $db->prepare("SELECT name, type, date, time FROM event WHERE accepted = TRUE");
 $statement->execute();
 
@@ -22,8 +22,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                </div>
             </div>
             ';
-
-?>
-
-
-<?php include 'footer.php'; ?>
+}    
+include 'footer.php';
+?> 
