@@ -7,8 +7,8 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
    $name = htmlentities($row['name']);
 	$type = $row['type'];
-	$date = date_format($row['date'], 'l jS F Y');
-	$time = date_format($row['time'], 'g:i A');
+	$date = date_format(date_create($row['date']), 'l jS F Y');
+	$time = date_format(date_create($row['time']), 'g:i A');
    
    echo "<div class='event'>
             <div class='bandname'>
