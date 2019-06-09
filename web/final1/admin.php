@@ -30,7 +30,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             <div class='date'> 
                $date at $time
                </div>
-               <input type='submit' class='button' name='event_id' value='$id' />
+               <button type='submit' class='button' name='event_id' value='$id'>Accept</button>
             </div>
             ";
 }    
