@@ -7,7 +7,7 @@
 	</fieldset>
 	<fieldset>
 		<label>Genre:</label>
-		<select required id="genre">
+		<select required name="genre">
 			<option value="" selected>--Choose Genre--</option>
 			<option value="Country">Country</option>
 			<option value="Metal">Metal</option>
@@ -18,8 +18,8 @@
 	</fieldset>
 	<fieldset>
 		<label>Date/Time:</label>
-		<input required type="date" id="show-date"/>
-		<input required type="time" id="show-time"/>
+		<input required type="date" name="show-date"/>
+		<input required type="time" name="show-time"/>
 	</fieldset>
 	<button type="submit">Submit</button>
 </form>
