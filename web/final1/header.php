@@ -17,6 +17,8 @@ require 'db.php';
          <li><a href="index.php" class="button-class">Home</a></li>
          <li><a href="menu.php" class="button-class">Menu</a></li>
          <li><a href="request.php" class="button-class">Request to Play</a></li>
+         <!--only to view the admin page will not be here if not needed to be seen-->
+         <li><a href="admin.php" class="button-class">Request to Play</a></li>
          <li><a href="signup.php" class="button-class">Sign Up/Sign In</a></li>
          </ul>
        </nav>
