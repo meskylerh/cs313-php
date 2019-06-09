@@ -1,6 +1,5 @@
 
      <div class="footer">
-       <p>Enjoy the music</p>
          <ul>
          <li><a href="index.php" class="button-class">Home</a></li>
          <li><a href="menu.php" class="button-class">Menu</a></li>
