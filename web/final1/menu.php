@@ -29,7 +29,7 @@ $weekday == "Thursday" || $weekday == "Friday"))
 </form>
 <?php
 $db = getDb();
-$statement = $db->prepare("SELECT name, price, day FROM menu where day = $weekday");
+$statement = $db->prepare("SELECT name, price, day FROM menu where day = '$weekday'");
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
