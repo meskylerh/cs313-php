@@ -2,11 +2,11 @@
 
 <form name="request" action="./submit_request.php" method="POST">
 	<fieldset>
-		<label>Band Name:</label>
+		<label class="labelsz">Band Name:</label>
 		<input required type="text" name="band-name" placeholder="Band Name" />
 	</fieldset>
 	<fieldset>
-		<label>Genre:</label>
+		<label class="labelsz">Genre:</label>
 		<select required name="genre">
 			<option value="" selected>--Choose Genre--</option>
 			<option value="country">Country</option>
@@ -17,7 +17,7 @@
 		</select>
 	</fieldset>
 	<fieldset>
-		<label>Date/Time:</label>
+		<label class="labelsz">Date/Time:</label>
 		<input required type="date" name="show-date"/>
 		<input required type="time" name="show-time"/>
 	</fieldset>

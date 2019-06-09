@@ -91,16 +91,17 @@ body  {
 .event 
 {
    background-color: #905c26;
-    margin-bottom: 14px;
-    padding: .5em;
-    color: #dfdfef;
+   margin-bottom: 14px;
+   padding: .5em;
+   color: #dfdfef;
+   border: 1px solid black;
 }
 
 .type
 {
-    text-transform: capitalize;
-    font-size: .8em;
-    margin-bottom: .4em;
+   text-transform: capitalize;
+   font-size: .8em;
+   margin-bottom: .4em;
 }
 
 .bandname
@@ -110,5 +111,36 @@ body  {
    border-bottom: 1px solid;
 }
 
+input, select, button {
+	height:24px;
+	border-radius:3px;
+	border:1px solid black;
+	padding:2px 4px;
+	box-sizing:border-box;
+}
+button {
+	min-width:auto;
+	background-color:#FFF;
+}
+button:hover {
+	background-color:#DDD;
+}
+button[type=submit] {
+	margin-top: 5px;
+}
 
+fieldset
+{
+   margin: 0 0 .5em 0;
+   color: #dfdfef;
+   padding: .5em;
+   background-color: #905c26;
+   border: 1px solid black;
+}
 
+.labelsz
+{
+   width: 150px;
+   display: inline-block;
+   vertical-align: middle;
+}
