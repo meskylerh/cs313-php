@@ -15,8 +15,8 @@ require 'db.php';
        <nav>
          <ul>
          <li><a href="index.php" class="button-class">Home</a></li>
-         <li><a href="Menu.php" class="button-class">Menu</a></li>
+         <li><a href="menu.php" class="button-class">Menu</a></li>
          <li><a href="request.php" class="button-class">Request to Play</a></li>
-         <li><a href="Signup.php" class="button-class">Sign Up/Sign In</a></li>
+         <li><a href="signup.php" class="button-class">Sign Up/Sign In</a></li>
          </ul>
        </nav>
