@@ -1,4 +1,5 @@
 
+      </div>
      <div class="footer">
          <ul>
          <li><a href="index.php" class="button-class">Home</a></li>

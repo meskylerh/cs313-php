@@ -50,7 +50,7 @@ session_start();
                 $r = users[0];
                 setSessionUser($r['id'], $r['login']);
                 printUser($r['username']);
-                $newPage = "freelance.php?my=true";
+                $newPage = "index.php";
                 header("Location: $newPage");
                 die();    
         } else {

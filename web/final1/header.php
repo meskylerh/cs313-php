@@ -20,3 +20,4 @@ require 'db.php';
          <li><a href="admin.php" class="button-class">Admin</a></li>
          </ul>
        </div>
+       <div class="container">

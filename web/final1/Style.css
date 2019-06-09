@@ -70,3 +70,14 @@ body  {
 .footer a:hover {
     background-color: #111;
 }
+
+.container
+{
+   padding: 14px;
+}
+
+.event 
+{
+   background-color: #111;
+}
+
