@@ -24,6 +24,13 @@ CREATE TABLE event
 	accepted BOOLEAN NOT NULL
 );
 
+CREATE TABLE request
+(
+	request_id SERIAL NOT NULL PRIMARY KEY,
+	event_id INT,
+	FOREIGN KEY (event_id) references event(event_id) 
+);
+
 create type genre as enum ('country', 'metal', 'rock', 'disco', 'pop');
 create type DAY as enum ('Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday');
 

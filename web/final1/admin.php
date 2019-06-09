@@ -4,10 +4,12 @@ $acceptid = $_POST['event_id'];
 if (isset($acceptid))
 {
    $sql= "Update event set accepted = TRUE where event_id = $acceptid";
-$db->prepare($sql)->execute();   
+   $db->prepare($sql)->execute(); 
+   $sql= "Delete from request where event_id = $acceptid";
+   $db->prepare($sql)->execute();     
 }
 
-$statement = $db->prepare("SELECT event_id, name, type, date, time FROM event WHERE accepted = false");
+$statement = $db->prepare("SELECT event_id, name, type, date, time FROM request INNER JOIN event on event.event_id = request.event_id");
 $statement->execute();
 ?>
 <form action='./admin.php' method='POST'>
