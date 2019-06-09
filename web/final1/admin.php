@@ -9,7 +9,7 @@ if (isset($acceptid))
    $db->prepare($sql)->execute();     
 }
 
-$statement = $db->prepare("SELECT event_id, name, type, date, time FROM request INNER JOIN event on event.event_id = request.event_id");
+$statement = $db->prepare("SELECT request.event_id, name, type, date, time FROM request INNER JOIN event on event.event_id = request.event_id");
 $statement->execute();
 ?>
 <form action='./admin.php' method='POST'>
