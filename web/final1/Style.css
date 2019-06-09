@@ -1,0 +1,15 @@
+.tabs {
+	border-bottom:1px solid #000;
+}
+.tabs input[type=radio] {
+	display:none;
+}
+.tabs input[type=radio]+label {
+	display:inline-block;
+	padding: 2px 8px;
+}
+.tabs input[type=radio]:checked+label {
+	border: 1px solid #000;
+	border-bottom: 1px solid #FFF;
+	margin-bottom: -1px;
+}

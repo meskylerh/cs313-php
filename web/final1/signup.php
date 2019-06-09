@@ -9,19 +9,19 @@
         
         echo '<h2>Signup</h2>
         <br>
-        <form name="Signup" action="./signup.php" method="POST">
+        <form name="Signup" action="./createAccount.php" method="POST">
         <fieldset>
         <label> E-mail: </label>
         <input required type ="text" name="login" type="text" />
         </fieldset>
         <fieldset>
         <label>Password:</label>
-        <input required type ="text" name="password" type="text">
+        <input required type ="text" name="password" type="text" />
         <br>
         <label>Confirm password:</label>
-        <input required type ="text" name="password_copy" type="text">
+        <input required type ="text" name="password_copy" type="text" />
         </fieldset>
-        <input type="submit">
+        <input type="submit" value="create Account" />
         </form>';
    
     

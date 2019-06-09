@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
-<?php
+<?php include 'header.php'; 
+
 echo '<form name="request" action="./submit_request.php" method="POST">
 	<fieldset>
 		<label>Band Name:</label>
@@ -24,4 +24,5 @@ echo '<form name="request" action="./submit_request.php" method="POST">
 	<button type="submit">Submit</button>
 </form>';
 
-<?php include 'footer.php'; ?>
+ include 'footer.php'; 
+?>

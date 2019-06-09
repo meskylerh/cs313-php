@@ -9,10 +9,10 @@
         </fieldset>
         <fieldset>
         <label>Password:</label>
-        <input required type ="text" name="password" type="text">
+        <input required type ="text" name="password" type="text" />
         <br>
         <label>Confirm password:</label>
-        <input required type ="text" name="password_copy" type="text">
+        <input required type ="text" name="password_copy" type="text" />
         </fieldset>
         <input type="submit">
         </form>';
