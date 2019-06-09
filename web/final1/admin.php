@@ -21,18 +21,12 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	$time = date_format(date_create($row['time']), 'g:i A');
    
    echo "<div class='event'>
-            <div class='bandname'>
-               $name 
-            </div>
-            <div class='type'> 
-              $type 
-            </div>
-            <div class='date'> 
-               $date at $time
-               </div>
-               <button type='submit' class='button' name='event_id' value='$id'>Accept</button>
-            </div>
-            ";
+            <div class='bandname'> $name </div>
+            <div class='type'> Genre: $type </div>
+            <div class='date'> $date at $time</div>
+            <button type='submit' class='button' name='event_id' value='$id'>Accept</button>
+         </div>
+";
 }    
 ?>
 </form>
