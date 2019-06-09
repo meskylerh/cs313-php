@@ -1,6 +1,6 @@
 <?php include 'header.php'; 
 $db = getDb();
-$statement = $db->prepare("SELECT name, type, date, time FROM event WHERE accepted = TRUE ORDER BY date DESC");
+$statement = $db->prepare("SELECT name, type, date, time FROM event WHERE accepted = TRUE ORDER BY date ASC");
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
