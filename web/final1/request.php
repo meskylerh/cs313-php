@@ -1,6 +1,6 @@
-<?php include 'header.php'; 
+<?php include 'header.php';?> 
 
-echo '<form name="request" action="./submit_request.php" method="POST">
+<form name="request" action="./submit_request.php" method="POST">
 	<fieldset>
 		<label>Band Name:</label>
 		<input required type="text" name="band-name" placeholder="Band Name" />
@@ -22,7 +22,6 @@ echo '<form name="request" action="./submit_request.php" method="POST">
 		<input required type="time" id="show-time"/>
 	</fieldset>
 	<button type="submit">Submit</button>
-</form>';
+</form>
 
- include 'footer.php'; 
-?>
+<?php include 'footer.php'; ?>
