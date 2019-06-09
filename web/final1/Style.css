@@ -13,3 +13,58 @@
 	border-bottom: 1px solid #FFF;
 	margin-bottom: -1px;
 }
+
+
+body  {
+    background-color: #FFFFFF;
+    font-family:  sans-serif;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.nav   li{
+    float: left;
+}
+.nav li a
+ {
+    
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #111;
+}
+
+.footer ul {
+   text-align:center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.footer   li{
+    float: right;
+}
+.footer li a
+ {
+    font-size: 15px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    background-color: #111;
+}
