@@ -15,7 +15,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                $name 
             </div>
             <div class='price'> 
-              $Price 
+              $price 
             </div>
             <div class='day'> 
                $day
