@@ -10,7 +10,6 @@ require 'db.php';
       <link rel="stylesheet" type="text/css" href="Style.css" />
       <Title>Rusty Blue</Title>
    </head>
-   <h1> 
 <body>
        <div class="nav">
          <ul>
