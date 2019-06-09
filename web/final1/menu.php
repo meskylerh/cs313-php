@@ -1,6 +1,6 @@
 <?php include 'header.php'; 
 $db = getDb();
-$statement = $db->prepare("SELECT name, price, day");
+$statement = $db->prepare("SELECT name, price, day FROM menu");
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
