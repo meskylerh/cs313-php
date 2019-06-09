@@ -1,19 +1,30 @@
 .tabs {
-	border-bottom:1px solid #000;
+	border-bottom: 1px solid #000;
 }
 .tabs input[type=radio] {
 	display:none;
 }
 .tabs input[type=radio]+label {
-	display:inline-block;
-	padding: 2px 8px;
+   display: inline-block;
+   padding: .5em;
+   border: 1px solid black;
+   margin-bottom: -1px;
+   color: #fff;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
 }
 .tabs input[type=radio]:checked+label {
-	border: 1px solid #000;
-	border-bottom: 1px solid #FFF;
-	margin-bottom: -1px;
+   background-color: #fff;
+   color: #000;
 }
 
+.menu
+{
+   background-color: #905c26;
+   padding: .5em;
+   border: 1px solid black;
+   color: #dfdfef;
+}
 
 body  {
     background-color: #FFFFFF;
@@ -74,10 +85,30 @@ body  {
 .container
 {
    padding: 14px;
+   background-color: #565965;
 }
 
 .event 
 {
-   background-color: #111;
+   background-color: #905c26;
+    margin-bottom: 14px;
+    padding: .5em;
+    color: #dfdfef;
 }
+
+.type
+{
+    text-transform: capitalize;
+    font-size: .8em;
+    margin-bottom: .4em;
+}
+
+.bandname
+{
+   font-size: 1.5em;
+   margin-bottom: .5em;
+   border-bottom: 1px solid;
+}
+
+
 

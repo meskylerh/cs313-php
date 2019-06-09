@@ -11,17 +11,11 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	$time = date_format(date_create($row['time']), 'g:i A');
    
    echo "<div class='event'>
-            <div class='bandname'>
-               $name 
-            </div>
-            <div class='type'> 
-              $type 
-            </div>
-            <div class='date'> 
-               $date at $time
-               </div>
-            </div>
-            ";
+            <div class='bandname'>$name</div>
+            <div class='type'> Genre: $type </div>
+            <div> $date at $time </div>
+         </div>
+";
 }    
 include 'footer.php';
 ?> 
