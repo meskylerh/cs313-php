@@ -40,15 +40,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 
    
    echo "<div class='menu'>
-            <div class='foodname'>
-               $name 
-            </div>
-            <div class='price'> 
-              $price 
-            </div>
-            <div class='day'> 
-               $day
-               </div>
+               $name  <span style='float:right'>$price</span>
             </div>
             ";
 }    
