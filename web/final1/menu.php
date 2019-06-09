@@ -1,8 +1,14 @@
-<?php include 'header.php';?> 
+<?php include 'header.php';
+$weekday = $_GET["menu-day"];
+if (!isset($weekday) || !($weekday == "Monday" || $weekday == "Tuesday" || $weekday == "Wednesday" || 
+$weekday == "Thursday" || $weekday == "Friday")) 
+{ $weekday = "Monday"; 
+}
+?> 
 
-<form name="tabs-days" id="tabs-days" action="./menu.php" method="POST">
+<form name="tabs-days" id="tabs-days" action="./menu.php" method="GET">
 	<div class="tabs">
-		<input type="radio" name="menu-day" onchange="submit()" value="Monday" id="days-monday" checked="checked"></input>
+		<input type="radio" name="menu-day" onchange="submit()" value="Monday" id="days-monday"></input>
 		<label for="days-monday">Monday</label>
 		<input type="radio" name="menu-day" onchange="submit()" value="Tuesday" id="days-tuesday"></input>
 		<label for="days-tuesday">Tuesday</label>
@@ -14,16 +20,16 @@
 		<label for="days-friday">Friday</label>
 	</div>
 	<script>
-		//var tabs = document.forms['tabs-days']['menu-day'];
-		//if (!tabs.value){
-		//	tabs.value = "Monday";
-		//}
+		var tabs = document.forms['tabs-days']['menu-day'];
+		if (!tabs.value){
+			tabs.value = "<?php echo $weekday?>";
+		}
 		function submit(){document.forms['days'].submit();}
 	</script>
 </form>
 <?php
 $db = getDb();
-$statement = $db->prepare("SELECT name, price, day FROM menu");
+$statement = $db->prepare("SELECT name, price, day FROM menu where day = $weekday");
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
