@@ -9,11 +9,11 @@
 		<label>Genre:</label>
 		<select required name="genre">
 			<option value="" selected>--Choose Genre--</option>
-			<option value="Country">Country</option>
-			<option value="Metal">Metal</option>
-			<option value="Rock">Rock</option>
-			<option value="Disco">Disco</option>
-			<option value="Pop">Pop</option>
+			<option value="country">Country</option>
+			<option value="metal">Metal</option>
+			<option value="rock">Rock</option>
+			<option value="disco">Disco</option>
+			<option value="pop">Pop</option>
 		</select>
 	</fieldset>
 	<fieldset>
