@@ -12,7 +12,7 @@ require 'db.php';
    </head>
    <h1> 
 <body>
-       <nav>
+       <div class="nav">
          <ul>
          <li><a href="index.php" class="button-class">Home</a></li>
          <li><a href="menu.php" class="button-class">Menu</a></li>
@@ -20,4 +20,4 @@ require 'db.php';
          <!--only to view the admin page will not be here if not needed to be seen-->
          <li><a href="admin.php" class="button-class">Admin</a></li>
          </ul>
-       </nav>
+       </div>
