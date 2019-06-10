@@ -13,6 +13,6 @@ $db->prepare($sql)->execute();
 echo '<h1>Thank you for submitting a request to play at the Rusty Blue!</h1>
       <p>We will review your request shortly</p>'
 ;
-
+$_SESSION['bandname'] = $_POST['band-name'];
 
  include 'footer.php'; ?>

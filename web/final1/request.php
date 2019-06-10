@@ -3,7 +3,7 @@
 <form name="request" action="./submit_request.php" method="POST">
 	<fieldset>
 		<label class="labelsz">Band Name:</label>
-		<input required type="text" name="band-name" placeholder="Band Name" />
+		<input required type="text" name="band-name" value="<?php echo htmlentities($_SESSION['bandname']);?>" placeholder="Band Name" />
 	</fieldset>
 	<fieldset>
 		<label class="labelsz">Genre:</label>
